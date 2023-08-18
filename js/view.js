@@ -72,6 +72,7 @@ function showMore(button) {
     closeButton.style.display = 'inline-block'; // Display the "Close" button
 
     const infoElement = document.createElement('div');
+    infoElement.classList.add('infoElement')
     infoElement.innerHTML = `<h5>${name}</h5><p>${number}</p>`;
     contactElement.appendChild(infoElement);
 }

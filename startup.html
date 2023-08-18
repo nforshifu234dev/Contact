@@ -7,9 +7,11 @@
     <title>My Contact</title>
     <link rel="stylesheet" href="css/startup.css">
     <script defer src="js/startup.js">  </script>
+    <script defer src="http://localhost/@itms/fontawesome-free-6.4.0-web/js/all.min.js"></script>
 </head>
 
 <body>
+
     <header>
         <div class="container">
             <div class="row">
@@ -21,9 +23,10 @@
                 </div>
                 <div class="navbar">
                     <ul>
-                        <li class="active">Add Contact</li>
-                        <li><a href="view.html">View Contact</a> </li>
-                        <li>About</li>
+                        <li><a href="#" class="active">Startup</a></li>
+                        <li ><a href="#">Add Contact</a></li>
+                        <li><a href="view.html" >View Contact</a> </li>
+                        <li><a href="#">About</a></li>
 
                 </div>
                 </ul>
@@ -32,13 +35,15 @@
     </header>
 
     <section>
-        <h4>Add Contact</h4>
-        <label for="contact">Choose method:</label>
-        <select id="contact" name="contact" required>
-            <option value="" disabled selected>Select a phone option</option>
-            <option value="phone">Phone Number</option>
-            <option value="form">Form</option>
-        </select>
+        <h4> <i class="far fa-vcard"></i> Add Contact</h4>
+        <div class="input">
+            <label for="contact">Choose method:</label>
+            <select id="contact" name="contact" required>
+                <option value="" disabled selected>Select a phone option</option>
+                <option value="phone">Phone Number</option>
+                <option value="form">Form</option>
+            </select>
+        </div>
         <div class="contact">
             <!-- <input type="tel" class="num" name="iosPhoneNumber" pattern="^[+]?[0-9]*$" placeholder="Enter phone number" required>
             <ul >
@@ -62,6 +67,7 @@
         </div>
 
     </section>
+
 </body>
 
 </html>

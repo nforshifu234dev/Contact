@@ -24,6 +24,7 @@ contactSelect.addEventListener('change', () => {
             </ul>
             <button type="submit" class="submit" onclick="submit(this)">Submit</button>
         `;
+        contactDiv.innerHTML = '';
         contactDiv.insertAdjacentHTML('afterbegin', html);
 
         const phoneButtons = document.querySelectorAll('.phone');
@@ -43,7 +44,7 @@ contactSelect.addEventListener('change', () => {
             <input type="tel" class="number" name="iosPhoneNumber" pattern="^[+]?[0-9]*$" placeholder="Enter phone number" required>
             <button type="submit" class="submit" onclick="submit(this)">Submit</button>
             `
-
+        contactDiv.innerHTML = '';
         contactDiv.insertAdjacentHTML('afterbegin', html)
 
     }

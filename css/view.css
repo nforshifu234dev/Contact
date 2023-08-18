@@ -1,4 +1,62 @@
-body{
-  text-align:center ;
+.contacts
+{
+  /* border: red solid 2px; */
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contacts .contact 
+{
+  /* border: green solid 2px; */
+  border: grey solid 1px;
+  height: max-content;
+  width: 33.33%;
+  padding: 1rem;
+  margin: 0;
+}
+
+.contacts .contact p
+{
+  /* border: blue solid 2px; */
+  display: flex;
   align-items: center;
+  width: 100%;
+}
+
+.contacts .contact p span
+{
+  margin: 0 5px;
+}
+
+.contacts .contact p span:first-of-type
+{
+  /* border: gold solid 2px; */
+  margin-left: 20px;
+}
+
+.contacts .contact p span button
+{
+  width: max-content;
+  padding: 1rem;
+}
+
+.contacts .contact p .infoElement
+{
+  display: block;
+  width: 100%;
+}
+
+.contacts .contact p .infoElement h5,
+.contacts .contact p .infoElement p
+{
+  background: #fff;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5px 0;
 }
