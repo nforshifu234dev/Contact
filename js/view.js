@@ -59,7 +59,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function deleteContact(button) {
-    const contactElement = button.closest('p');
+
+    /**
+     * Also i made changes here too.
+     * 
+    */
+    // const contactElement = button.closest('p');
+    const contactElement = button.closest('.contact');
     contactElement.remove();
 }
 
@@ -67,7 +73,12 @@ function showMore(button) {
     const contactElement = button.closest('p');
     const name = contactElement.getAttribute('data-name');
     const number = contactElement.getAttribute('data-number');
-    button.parentElement.removeChild(button)
+    /**
+     * This is the line i changed and replaced it with the next one.
+    */
+    // button.parentElement.removeChild(button);
+    button.style.display = "none";
+
     const closeButton = contactElement.querySelector('[onclick="closeButton(this)"]');
     closeButton.style.display = 'inline-block'; // Display the "Close" button
 
@@ -83,7 +94,9 @@ function closeButton(button) {
     moreButton.style.display = 'inline-block'; // Display the "More" button
     contactElement.removeChild(contactElement.lastElementChild); // Remove the info section
     button.style.display = 'none'; // Hide the "Close" button
+
 }
+
 function editContact(button) {
     const contactElement = button.closest('.contact');
     const editForm = contactElement.querySelector('.edit-form');

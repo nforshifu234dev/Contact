@@ -24,11 +24,12 @@
   display: flex;
   align-items: center;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .contacts .contact p span
 {
-  margin: 0 5px;
+  margin: 0 3px;
 }
 
 .contacts .contact p span:first-of-type
@@ -59,4 +60,6 @@
   justify-content: center;
   text-align: center;
   margin: 5px 0;
+  padding: 1rem;
 }
+

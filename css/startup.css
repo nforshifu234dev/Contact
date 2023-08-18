@@ -173,3 +173,33 @@ body section button
   margin-top: 20px;
   border-radius: 5px;
 }
+
+/* Keypad Styling */
+
+.keypad
+{
+  /* border: red solid 2px; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.keypad .phone
+{
+  /* border: green solid 2px; */
+  width: 33.33%;
+  height: 50px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+}
+
+.keypad .phone:hover
+{
+  background: #fff;
+  color: #000;
+  border: #000 solid 1px;
+}

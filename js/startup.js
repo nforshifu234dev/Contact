@@ -9,8 +9,8 @@ contactSelect.addEventListener('change', () => {
          <label for="name">Name:</label>
             <input type="text" class="name" placeholder="Enter name" required>
             <label for="number">Phone Number:</label>
-            <input type="number" class="num" name="iosPhoneNumber" pattern="^[+]?[0-9]*$" placeholder="Enter phone number" required>
-            <ul>
+            <input type="number" class="num number" name="iosPhoneNumber" pattern="^[+]?[0-9]*$" placeholder="Enter phone number" required>
+            <ul class="keypad">
                 <li class="phone">1</li>
                 <li class="phone">2</li>
                 <li class="phone">3</li>
@@ -51,13 +51,17 @@ contactSelect.addEventListener('change', () => {
 });
 
 function submit() {
-    const num = document.querySelector('.number')
-    const user = document.querySelector('.name')
-    const userValue = user.value
-    const numValue = num.value
+    const num = document.querySelector('.number');
+    const user = document.querySelector('.name');
+
+    console.log(num);
+    console.log(user);
+
+    const userValue = user.value;
+    const numValue = num.value;
     if (numValue) localStorage.setItem('Number', numValue)
     if (userValue) localStorage.setItem('Name', userValue)
-    if (!user.Value) {
+    if (!user.value) {
         document.addEventListener('click', (e) => {
             e.preventDefault()
             alert('Please fill in the form')
